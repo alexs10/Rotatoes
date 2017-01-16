@@ -1,0 +1,9 @@
+
+
+<template name="loginButton">
+  {{#if isLogggedOn}}
+    <li><a href="/sign-out">Sign out</a></li>
+  {{else}}
+    <li><a href="/sign-in">Login</a></li>
+  {{/if}}
+</template>
