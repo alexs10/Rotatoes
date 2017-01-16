@@ -1,15 +1,12 @@
 <template name="main">
-  <div class="container">
-    <header>
-      <form class="new-rotato">
-       <input type="text" name="text" placeholder="Type to add new rotatoes" />
-     </form>
-    </header>
-    <ul>
-      {{#each rotatoes}}
-        test
-        {{> rotato}}
-      {{/each}}
-    </ul>
-  </div>
+  <header>
+    <form class="new-rotato">
+     <input type="text" name="text" placeholder="Type to add new rotatoes" />
+   </form>
+  </header>
+  <ul>
+    {{#each rotatoes}}
+      {{> rotato}}
+    {{/each}}
+  </ul>
 </template>

@@ -21,12 +21,8 @@ Template.main.events({
     const target = event.target;
     const text = target.text.value;
 
-    Rotatoes.insert({
-      text,
-      createdAt: new Date(), // current time
-      owner: Meteor.userId(),
-      username: Meteor.user().username,
-    });
+    Meteor.call('rotatoes.insert', text, ["Sam", "Carly", "Freddie"]);
+
 
     // Clear form
     target.text.value = '';
