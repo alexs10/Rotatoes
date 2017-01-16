@@ -1,0 +1,16 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Rotatoes</h1>
+      <form class="new-rotato">
+       <input type="text" name="text" placeholder="Type to add new rotatoes" />
+     </form>
+    </header>
+
+    <ul>
+      {{#each rotatoes}}
+        {{> rotato}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
