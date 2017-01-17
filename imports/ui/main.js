@@ -4,6 +4,9 @@ import { Rotatoes } from '../api/rotatoes.js';
 
 import './main.html';
 
+Template.main.onCreated(function bodyOnCreated() {
+  Meteor.subscribe('rotatoes');
+});
 
 Template.main.helpers({
   rotatoes() {
