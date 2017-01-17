@@ -5,3 +5,4 @@ import '../imports/ui/nav.html';
 import '../imports/ui/loginButton.js';
 import '../imports/ui/rotato.js';
 import '../imports/ui/main.js';
+import '../imports/ui/newRotato.js';
